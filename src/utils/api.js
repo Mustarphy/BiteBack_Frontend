@@ -1,5 +1,5 @@
 const token = await firebase.auth().currentUser.getIdToken();
-fetch("http://localhost:5000/api/news", {
+fetch("https://biteback-backend-1.onrender.com", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
