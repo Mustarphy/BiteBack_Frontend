@@ -14,7 +14,7 @@ const HomeProduct = ({ product }) => {
         <h3 className="text-lg font-semibold text-gray-900">{product.name || "Unnamed Product"}</h3>
         <p className="text-gray-600 text-sm mt-2">{product.description || "No description available."}</p>
         <div className="mt-3 flex justify-between items-center">
-          <span className="text-green-600 font-bold text-lg">{product.price?.toLocaleString() || "N/A"}</span>
+          <span className="text-green-600 font-bold text-lg">₦{product.price?.toLocaleString() || "N/A"}</span>
           <a href="/shop"n className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
             Buy Now
           </a>

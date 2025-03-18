@@ -6,7 +6,7 @@ const newsArticles = [
       comments: 3,
       title: "Hurricane Irma has devastated Florida",
       description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      image: "/event2.jpg",
+      image: "/ourevnent.jpg",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const newsArticles = [
       comments: 3,
       title: "Hurricane Irma has devastated Florida",
       description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      image: "/evente3.jpg",
+      image: "/ourevnent1.jpg",
     },
   ];
   

@@ -1,11 +1,11 @@
 const Categories = () => {
     const categories = [
-      { name: "Fishes & Raw Meats", icon: "/fish-icon.png" },
-      { name: "Fruits & Vegetables", icon: "/fruits-icon.png" },
-      { name: "Breads & Sweets", icon: "/bread-icon.png" },
-      { name: "Milks & Proteins", icon: "/milk-icon.png" },
-      { name: "Cleaning Materials", icon: "/cleaning-icon.png" },
-      { name: "Ready to Use Foods", icon: "/readyfood-icon.png" },
+      { name: "Fishes & Raw Meats", icon: "/categoriesA.png" },
+      { name: "Fruits & Vegetables", icon: "/categoriesB.png" },
+      { name: "Breads & Sweets", icon: "/categoriesC.png" },
+      { name: "Milks & Proteins", icon: "/categoriesD.png" },
+      { name: "Cleaning Materials", icon: "/categoriesE.png" },
+      { name: "Ready to Use Foods", icon: "/categoriesF.png" },
     ];
   
     return (

@@ -9,7 +9,7 @@ const donationEvents = [
       venue: "Venue Main Campus",
       description:
         "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      image: "/event2.jpg",
+      image: "/upcomigdonation.jpg",
     },
     {
       id: 2,
