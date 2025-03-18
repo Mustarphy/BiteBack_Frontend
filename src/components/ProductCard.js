@@ -24,7 +24,7 @@ function ProductCard({ product }) {
         />
         <div className="p-4">
           <h3 className="text-lg font-semibold text-gray-900">{product.name}</h3>
-          <p className="text-gray-600 mt-1">${product.price}</p>
+          <p className="text-gray-600 mt-1">₦{product.price}</p>
           <div className="mt-4 flex justify-between items-center">
           <button onClick={handleAddToCart}className="btn bg-green-500 text-white" disabled={!product.inStock}> Add to Cart </button>
             <span className="text-sm text-gray-500">
