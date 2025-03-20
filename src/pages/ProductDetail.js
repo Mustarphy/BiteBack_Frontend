@@ -224,7 +224,7 @@ function ProductDetail() {
         {/* Product Info */}
         <div className="space-y-6">
           <h1 className="text-3xl font-bold">{product.name}</h1>
-          <p className="text-2xl text-green-500">${product.price}</p>
+          <p className="text-2xl text-green-500">₦{product.price}</p>
           <p className="text-gray-600">{product.description}</p>
 
           {/* Stock Status */}
