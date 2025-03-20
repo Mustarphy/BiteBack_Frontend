@@ -144,7 +144,7 @@ function Checkout() {
                     <h2 className="text-2xl font-bold mb-4">Your cart is empty</h2>
                     <button
                         onClick={() => navigate('/shop')}
-                        className="btn btn-primary"
+                        className=" bg-green-400 hover:bg-green-500"
                     >
                         Continue Shopping
                     </button>
@@ -174,7 +174,7 @@ function Checkout() {
 
             {step === 1 && (
                 <form onSubmit={handleShippingSubmit} className="max-w-lg mx-auto">
-                    <h2 className="text-2xl font-bold mb-6">Shipping Details</h2>
+                    <h2 className="text-2xl font-bold mb-6 text-green-500">Shipping Details</h2>
                     <div className="space-y-4">
                         <div>
                             <label className="block text-gray-700 font-medium mb-2">Full Name</label>
@@ -281,7 +281,7 @@ function Checkout() {
             </div>
             <button
               type="submit"
-              className="btn btn-primary w-full"
+              className="btn bg-green-400 hover:bg-green-500 w-full"
             >
               Continue to Payment
             </button>
@@ -299,7 +299,7 @@ function Checkout() {
             </div>
             <button
               onClick={handlePaymentClick}
-              className="btn btn-primary w-full"
+              className="btn bg-green-400 hover:bg-green-500 w-full"
               disabled={isLoading}
             >
               {isLoading ? (
@@ -343,7 +343,7 @@ function Checkout() {
               </button>
               <button
                 onClick={() => navigate('/shop')}
-                className="btn btn-primary w-full"
+                className="btn bg-green-400 hover:bg-green-500 w-full"
               >
                 Continue Shopping
               </button>
@@ -365,13 +365,13 @@ function Checkout() {
           {cart.map((item) => (
             <div key={item.id} className="flex justify-between py-2">
               <span>{item.name} × {item.quantity}</span>
-              <span>${(item.price * item.quantity).toFixed(2)}</span>
+              <span>₦{(item.price * item.quantity).toFixed(2)}</span>
             </div>
           ))}
           <div className="border-t border-gray-200 mt-4 pt-4">
             <div className="flex justify-between font-bold">
               <span>Total</span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>₦{cartTotal.toFixed(2)}</span>
             </div>
           </div>
         </div>

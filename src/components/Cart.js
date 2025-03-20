@@ -30,7 +30,7 @@ function Cart() {
               />
               <div>
                 <h3 className="font-semibold">{item.name}</h3>
-                <p className="text-gray-600">${item.price}</p>
+                <p className="text-gray-600">₦{item.price}</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -59,11 +59,11 @@ function Cart() {
         <div className="mt-8">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold">
-              Total: ${cartTotal.toFixed(2)}
+              Total: ₦{cartTotal.toFixed(2)}
             </div>
             <Link
               to="/checkout"
-              className="btn btn-primary"
+              className="btn bg-green-400 hover:bg-green-500"
             >
               Proceed to Checkout
             </Link>
