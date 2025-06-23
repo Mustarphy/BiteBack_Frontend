@@ -40,8 +40,9 @@ function Navbar() {
 
   const navigation = [
     { name: 'Home', path: '/' },
-    { name: 'Shop Now', path: '/shop' },
-    { name: 'Charity', path: '/charity' },
+    { name: 'Shop', path: '/shoprite' },
+    // { name: 'Shop Now', path: '/shop' },
+    // { name: 'Blog', path: '/blog' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact Us', path: '/contact' },
   ];

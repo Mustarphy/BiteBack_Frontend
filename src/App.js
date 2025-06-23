@@ -20,6 +20,7 @@ import AboutUs from './pages/About';
 import FloatingButtons from './components/FloatinButton';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import VolunteerForm from './pages/BeVolunteer';
 
 function Layout() {
   const location = useLocation();
@@ -31,14 +32,15 @@ function Layout() {
       <Navbar />
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/shoprite" element={<Home />} />
           <Route path="/shop" element={<ProtectedRoute><Shop /></ProtectedRoute>} />
-          <Route path="/charity" element={<Charity />} />
+          <Route path="/" element={<Charity />} />
           {/* <Route path="/blog" element={<Blog />} />*/}
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactForm />} />  
 
           <Route path="/cart" element={<Cart />} />
+          <Route path="/volunteerForm" element={<VolunteerForm />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

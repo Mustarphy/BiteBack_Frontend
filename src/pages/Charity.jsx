@@ -19,8 +19,10 @@ const Hero = () => {
       >
         <div className="bg-[#00000099]">
         <div className="container mx-auto px-6 text-center py-16 rounded-lg">
-          <h1 className="text-4xl font-bold "  style= {{fontFamily: 'Garamond'}}>Support BiteBack Mission to Provide Fresh Food and Provisions to Motherless Children with Your Online Shopping.</h1>
-          <p className="mt-4 text-lg">Our platform enables customers to contribute fresh food and provisions to less privileged children when checking out their orders.</p>
+          <h1 className="text-4xl font-bold "  style= {{fontFamily: 'Garamond'}}>  Shop for a Cause — Feed a Child Today</h1>
+          <p className="mt-4 text-xl">Every order you place at <strong>Biteback Super Market</strong> goes directly to providing food, hygiene, and daily essentials for orphanages and underprivileged children.
+
+</p>
           <button className="mt-6 px-6 py-3 bg-none text-white border-white border-2 rounded-lg hover:bg-white hover:text-orange-500">
           <PlayIcon> </PlayIcon>Watch Video
           </button>

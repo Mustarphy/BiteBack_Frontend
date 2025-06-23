@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const CardSection = () => {
     const cards = [
       {
@@ -5,7 +7,7 @@ const CardSection = () => {
         title: "Support",
         description: "We donate to orphanages to ensure every child's basic needs are met. By doing so, we help create a stable and healthy foundation for their physical and emotional well-being.",
         bgColor: "bg-orange-500",
-        button: "Donate Now"
+        button: "Start Shopping for a Cause"
       },
       {
         id: "scalability",
@@ -39,8 +41,9 @@ const CardSection = () => {
               >
                 <h3 className="text-xl font-semibold">{card.title}</h3>
                 <p className="mt-2">{card.description}</p>
+               
                 <button className="mt-4 px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-black hover:text-white transition">
-                {card.button} {card.button1}
+                <Link to="/shoprite" >{card.button} </Link> <Link to="/volunteerForm"> {card.button1} </Link>
                 </button>
               </div>
             ))}

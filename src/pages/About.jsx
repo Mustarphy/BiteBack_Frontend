@@ -26,8 +26,8 @@ const AboutUs = () => {
           {/* Overlay Box */}
           <div className="absolute bottom-6 left-6 bg-green-900 text-white p-6 rounded-lg w-[80%] md:w-[60%] shadow-lg">
             <p className="text-lg font-semibold">
-              We've been delivering a fresh take on grocery shopping for more than{" "}
-              <span className="text-green-400">35 years</span>
+            BiteBack isn’t powered by profits — it's powered by people like you{" "}
+              <span className="text-green-400">Because every time you shop, you “bite back” against poverty, hunger, and neglect. </span>
             </p>
           </div>
         </motion.div>
@@ -45,7 +45,12 @@ const AboutUs = () => {
            Our  <span className="text-green-500 underline">Story</span>
           </h2>
           <p className="text-gray-600 mt-4">
-          BiteBack was founded in [2017] by a group of passionate individuals who saw the need for a more equitable and sustainable food system. Since then, we've grown into a vibrant community of volunteers, donors, and partners, all working together to make a difference.
+          In a small city filled with the sounds of hustle and the smell of freshly baked bread, a bold idea was born — BiteBack Supermarket. Not just another store on the block, but a movement rooted in compassion and community.
+          <br></br>
+          <strong>We asked a simple question:</strong>
+          “What if your groceries could feed more than just your home?”
+
+          And from that, BiteBack came alive.
           </p>
 
           {/* Features List */}
