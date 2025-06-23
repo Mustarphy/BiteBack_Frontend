@@ -279,6 +279,7 @@ function Checkout() {
                 <p className="text-red-500 text-sm mt-1">{validationErrors.zipCode}</p>
               )}
             </div>
+            
             <button
               type="submit"
               className="btn bg-green-400 hover:bg-green-500 w-full"
