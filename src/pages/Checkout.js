@@ -279,7 +279,27 @@ function Checkout() {
                 <p className="text-red-500 text-sm mt-1">{validationErrors.zipCode}</p>
               )}
             </div>
-            
+            <div>
+              <label className="block text-gray-700 font-medium mb-2">
+                Orphanage
+              </label>
+              <input
+                type="text"
+                name="city"
+                value={shippingDetails.orphanage}
+                onChange={(e) => {
+                  // Allow letters, spaces, and hyphens
+                  const value = e.target.value.replace(/[^a-zA-Z\s-]/g, '');
+                  setShippingDetails({ ...shippingDetails, orphanage: value });
+                }}
+                required
+                className={`form-input ${validationErrors.orphanage ? 'border-red-500' : ''}`}
+                placeholder="Enter your orphanage home"
+              />
+              {validationErrors.orphanage && (
+                <p className="text-red-500 text-sm mt-1">{validationErrors.orphanage}</p>
+              )}
+            </div>
             <button
               type="submit"
               className="btn bg-green-400 hover:bg-green-500 w-full"
